@@ -37,9 +37,9 @@ extern crate winapi;
 ///
 /// Note that due to the vagaries of the system libraries, it is possible that a
 /// misleading error may be generated: for example, the hostname may be malformed
-/// but in a manner that does not immediate generate a `ValidationResult::MalformedHostname`
+/// but in a manner that does not generate a `ValidationResult::MalformedHostname`
 /// result. That's unfortunate, but there is relatively little that can be done about that
-/// in the absence of clearer system APIs.
+/// in the absence of better system APIs.
 #[derive(PartialEq, Debug)]
 pub enum ValidationResult {
     Trusted = 1,
